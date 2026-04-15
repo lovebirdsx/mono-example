@@ -12,9 +12,9 @@ pnpm --filter @acme/web dev     # http://localhost:3000
 pnpm build
 
 # 检查
-pnpm typecheck # 全量类型检查
-pnpm format:check # CI 中检查格式是否合规
-pnpm format # 格式化所有文件
+pnpm typecheck  # 全量类型检查
+pnpm lint       # 检查代码规范（含 Prettier 格式）
+pnpm lint:fix   # 自动修复代码规范 + 格式问题
 
 # 测试
 pnpm test
