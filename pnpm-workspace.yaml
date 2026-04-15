@@ -33,7 +33,7 @@ catalog:
   typescript-eslint: ^8.0.0
 
   # Build tools
-  vite: ^6.0.0
+  vite: ^7.0.0
 
   # Test
   '@testing-library/react': ^16.0.0
