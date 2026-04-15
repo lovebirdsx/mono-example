@@ -14,12 +14,14 @@
   "scripts": {
     "build": "tsc --build",
     "typecheck": "tsc --build",
+    "lint": "eslint src",
     "test": "vitest run",
     "dev": "tsc --build --watch",
     "clean": "tsc --build --clean"
   },
   "devDependencies": {
     "@acme/config-ts": "workspace:*",
+    "eslint": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   }
