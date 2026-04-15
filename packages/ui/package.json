@@ -12,6 +12,7 @@
   "scripts": {
     "build": "tsc --build",
     "typecheck": "tsc --build",
+    "test": "vitest run",
     "dev": "tsc --build --watch",
     "clean": "tsc --build --clean"
   },
@@ -24,8 +25,12 @@
   },
   "devDependencies": {
     "@acme/config-ts": "workspace:*",
+    "@testing-library/react": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
-    "typescript": "catalog:"
+    "@vitejs/plugin-react": "catalog:",
+    "happy-dom": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

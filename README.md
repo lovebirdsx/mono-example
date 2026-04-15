@@ -11,9 +11,14 @@ pnpm --filter @acme/web dev     # http://localhost:3000
 # 全量构建
 pnpm build
 
-# 类型检查 + 测试
+# 类型检查 
 pnpm typecheck
+
+# 测试
 pnpm test
+pnpm --filter @acme/ui test
+pnpm --filter @acme/api test
+pnpm --filter @acme/web test
 
 # 发布新版本（Changesets）
 pnpm changeset          # 声明变更

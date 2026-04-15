@@ -36,4 +36,6 @@ catalog:
   vite: ^6.0.0
 
   # Test
+  '@testing-library/react': ^16.0.0
+  'happy-dom': ^17.0.0
   vitest: ^3.0.0
