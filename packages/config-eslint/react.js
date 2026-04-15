@@ -4,6 +4,7 @@ import baseConfig from './index.js'
 export default [
   ...baseConfig,
   {
+    files: ['**/*.tsx', '**/*.jsx'],
     plugins: {
       'react-hooks': reactHooksPlugin,
     },
