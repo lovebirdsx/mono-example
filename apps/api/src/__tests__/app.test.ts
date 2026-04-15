@@ -6,7 +6,7 @@ describe('GET /', () => {
     const res = await app.request('/')
     expect(res.status).toBe(200)
 
-    const body = await res.json() as {
+    const body = (await res.json()) as {
       message: string
       demo: { price_usd: string; price_eur: string }
       timestamp: string
@@ -23,7 +23,7 @@ describe('GET /health', () => {
     const res = await app.request('/health')
     expect(res.status).toBe(200)
 
-    const body = await res.json() as { status: string }
+    const body = (await res.json()) as { status: string }
     expect(body.status).toBe('ok')
   })
 })

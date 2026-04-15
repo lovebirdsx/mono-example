@@ -17,7 +17,9 @@ catalog:
 
   # Lint
   eslint: ^9.0.0
+  eslint-config-prettier: ^9.0.0
   eslint-plugin-react-hooks: ^5.2.0
+  prettier: ^3.0.0
 
   # API
   hono: ^4.7.0

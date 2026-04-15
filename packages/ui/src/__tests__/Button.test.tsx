@@ -42,7 +42,15 @@ describe('Button', () => {
 
   it('calls onClick when clicked', () => {
     let clicked = false
-    render(<Button onClick={() => { clicked = true }}>Click</Button>)
+    render(
+      <Button
+        onClick={() => {
+          clicked = true
+        }}
+      >
+        Click
+      </Button>,
+    )
     fireEvent.click(screen.getByRole('button'))
     expect(clicked).toBe(true)
   })

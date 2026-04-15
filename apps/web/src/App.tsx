@@ -34,9 +34,7 @@ export default function App() {
             }}
           >
             <div style={{ fontWeight: 600 }}>{p.name}</div>
-            <div style={{ color: '#2563eb', marginBottom: '0.75rem' }}>
-              {formatMoney(p.price)}
-            </div>
+            <div style={{ color: '#2563eb', marginBottom: '0.75rem' }}>{formatMoney(p.price)}</div>
             <Button
               variant={selected === p.id ? 'secondary' : 'primary'}
               size="sm"
@@ -50,10 +48,7 @@ export default function App() {
 
       {selected !== null && (
         <p style={{ marginTop: '1.5rem', color: '#16a34a' }}>
-          Selected:{' '}
-          <strong>
-            {PRODUCTS.find((p) => p.id === selected)?.name}
-          </strong>
+          Selected: <strong>{PRODUCTS.find((p) => p.id === selected)?.name}</strong>
         </p>
       )}
     </main>

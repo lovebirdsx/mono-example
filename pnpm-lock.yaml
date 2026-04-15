@@ -30,6 +30,9 @@ catalogs:
     eslint:
       specifier: ^9.0.0
       version: 9.39.4
+    eslint-config-prettier:
+      specifier: ^9.0.0
+      version: 9.1.2
     eslint-plugin-react-hooks:
       specifier: ^5.2.0
       version: 5.2.0
@@ -39,6 +42,9 @@ catalogs:
     hono:
       specifier: ^4.7.0
       version: 4.12.12
+    prettier:
+      specifier: ^3.0.0
+      version: 3.8.3
     react:
       specifier: ^19.0.0
       version: 19.2.5
@@ -77,6 +83,9 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 9.39.4
+      prettier:
+        specifier: 'catalog:'
+        version: 3.8.3
       turbo:
         specifier: 'catalog:'
         version: 2.9.6
@@ -175,6 +184,9 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 9.39.4
+      eslint-config-prettier:
+        specifier: 'catalog:'
+        version: 9.1.2(eslint@9.39.4)
       eslint-plugin-react-hooks:
         specifier: 'catalog:'
         version: 5.2.0(eslint@9.39.4)
@@ -1139,6 +1151,12 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
+  eslint-config-prettier@9.1.2:
+    resolution: {integrity: sha512-iI1f+D2ViGn+uvv5HuHVUamg8ll4tN+JRHGc6IJi4TP9Kl976C57fzPXgseXNs8v0iA8aSJpHsTWjDb9QJamGQ==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+
   eslint-plugin-react-hooks@5.2.0:
     resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
     engines: {node: '>=10'}
@@ -1542,6 +1560,11 @@ packages:
   prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+    engines: {node: '>=14'}
     hasBin: true
 
   pretty-format@27.5.1:
@@ -2779,6 +2802,10 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
+  eslint-config-prettier@9.1.2(eslint@9.39.4):
+    dependencies:
+      eslint: 9.39.4
+
   eslint-plugin-react-hooks@5.2.0(eslint@9.39.4):
     dependencies:
       eslint: 9.39.4
@@ -3147,6 +3174,8 @@ snapshots:
   prelude-ls@1.2.1: {}
 
   prettier@2.8.8: {}
+
+  prettier@3.8.3: {}
 
   pretty-format@27.5.1:
     dependencies:

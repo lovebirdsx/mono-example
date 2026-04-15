@@ -11,8 +11,10 @@ pnpm --filter @acme/web dev     # http://localhost:3000
 # 全量构建
 pnpm build
 
-# 类型检查 
-pnpm typecheck
+# 检查
+pnpm typecheck # 全量类型检查
+pnpm format:check # CI 中检查格式是否合规
+pnpm format # 格式化所有文件
 
 # 测试
 pnpm test

@@ -1,16 +1,12 @@
 import * as React from 'react'
 import { cn } from '@acme/shared'
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'ghost'
   size?: 'sm' | 'md' | 'lg'
 }
 
-const variantClasses: Record<
-  NonNullable<ButtonProps['variant']>,
-  string
-> = {
+const variantClasses: Record<NonNullable<ButtonProps['variant']>, string> = {
   primary: 'bg-blue-600 text-white hover:bg-blue-700',
   secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300',
   ghost: 'bg-transparent text-gray-700 hover:bg-gray-100',

@@ -8,6 +8,8 @@
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
     "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\" --ignore-path .gitignore",
     "dev": "turbo run dev",
     "clean": "turbo run clean",
     "changeset": "changeset",
@@ -18,6 +20,7 @@
     "@acme/config-eslint": "workspace:*",
     "@changesets/cli": "catalog:",
     "eslint": "catalog:",
+    "prettier": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"

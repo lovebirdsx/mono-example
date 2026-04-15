@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
     "eslint-plugin-react-hooks": "catalog:",
     "typescript-eslint": "catalog:"
   }
