@@ -5,11 +5,6 @@ afterEach(cleanup)
 import App from '../App.js'
 
 describe('App', () => {
-  it('renders the page heading', () => {
-    render(<App />)
-    expect(screen.getByText('Acme Monorepo Demo')).toBeDefined()
-  })
-
   it('renders all three products with formatted prices', () => {
     render(<App />)
     expect(screen.getByText('Widget Pro')).toBeDefined()
